@@ -2,7 +2,7 @@
 
 ## 📷 Project Preview
 
-![Dashboard](Dashboard/dashboard.png)
+![Dashboard](Images/Dashboard.png)
 
 ---
 
