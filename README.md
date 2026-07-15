@@ -42,13 +42,17 @@ This project simulates a real-world retail environment, combining:
 ```
 Retail-Fraud-Analysis/
 │
-├── Dashboard/ → Dashboard file + image preview
+├── Dashboard/ → Dashboard file
 ├── Data/ → Generated or source data
-├── Images/ → Assets used in README
+├── Images/ image preview
 ├── Output/ → Generated PDF report
 ├── Script/ → Python scripts
 │ ├── generate_data.py
 │ └── retail_fraud_report.py
+│
+├── SQL/
+│ ├── sales.db → Database structure (tables)
+│ └── sales_queries.sql → Analysis queries
 │
 └── README.md
 ```
@@ -85,7 +89,7 @@ The dashboard provides a visual overview of:
 - Key KPIs  
 
 📍 Located in:
-Dashboard/
+`Dashboard/DashboardP2.pbix`
 
 ---
 
