@@ -38,6 +38,13 @@ This project simulates a real-world retail environment, combining:
 
 ---
 
+## 🧠 Business Problem
+
+Retail companies face significant losses due to fraudulent transactions, including abnormal purchasing behavior, refund abuse, and suspicious patterns.
+
+This project aims to simulate a retail environment and identify potential fraud signals through data analysis and visualization.
+---
+
 ## 📂 Project Structure
 ```
 Retail-Fraud-Analysis/
@@ -57,6 +64,45 @@ Retail-Fraud-Analysis/
 └── README.md
 ```
 
+---
+## ⚙️ Project Architecture
+
+1. Data generation (Python)
+2. Data storage (MySQL)
+3. Data analysis (SQL queries)
+4. Visualization (Power BI dashboard)
+5. Reporting (automated PDF generation)
+
+---
+## 🗄️ SQL Analysis
+
+📍 **Path:** `Script/queries.sql`
+
+Key queries include:
+- Fraud detection rules
+- Customer behavior analysis
+- Transaction anomalies
+
+---
+## ⚙️ Project Architecture
+
+1. Data generation (Python)
+2. Data storage (MySQL)
+3. Data analysis (SQL queries)
+4. Visualization (Power BI dashboard)
+5. Reporting (automated PDF generation)
+
+---
+## 📊 Dashboard
+
+Interactive Power BI dashboard for fraud detection.
+
+📍 **Path:** `Dashboard/dashboard.pbix`
+
+### Key insights:
+- High-risk customers
+- Suspicious transaction patterns
+- Fraud distribution
 ---
 
 ## 📊 Key Business Metrics
@@ -112,19 +158,59 @@ A professional PDF report is automatically generated using Python.
 
 ---
 
-## ⚙️ How to Run the Project
+## 🚀 How to Run
 
-### 1️⃣ Generate data
+Follow these steps to execute the full retail fraud analysis pipeline:
 
-python Script/generate_data.py
+### 1️⃣ Generate Synthetic Data
+Run the Python script to create simulated retail transaction data.
 
-### 2️⃣ Run analysis and generate report
-python Script/retail_fraud_report.py
+```bash
+python Script/data_generator.py
+```
 
-💡 Key Insights
-A small group of customers concentrates most fraud cases
-Fraud is not evenly distributed across stores and products
-Higher transaction frequency may indicate higher fraud exposure
+---
+
+### 2️⃣ Load Data into Database
+Import the generated data into your MySQL database.
+
+> Make sure your database connection is properly configured.
+
+---
+
+### 3️⃣ Run SQL Analysis
+Execute the SQL queries to analyze transactions and detect potential fraud patterns.
+
+📍 **Path:** `Script/queries.sql`
+
+---
+
+### 4️⃣ Explore the Dashboard
+Open the Power BI dashboard to visualize fraud insights and patterns.
+
+📍 **Path:** `Dashboard/dashboard.pbix`
+
+---
+
+### 5️⃣ Generate Automated Report
+Run the reporting script to generate a PDF with key findings.
+
+```bash
+python Script/report_generator.py
+```
+
+📄 **Output:** `Output/retail_fraud_report.pdf`
+
+---
+
+## 🧩 End-to-End Workflow
+
+1. Data generation (Python)  
+2. Data storage (MySQL)  
+3. Data analysis (SQL)  
+4. Visualization (Power BI)  
+5. Reporting (PDF automation)
+
 🚀 Project Highlights
 
 ✔ End-to-end data pipeline
