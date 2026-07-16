@@ -89,6 +89,7 @@ The dashboard provides a visual overview of:
 - Key KPIs  
 
 📍 Located in:
+
 `Dashboard/DashboardP2.pbix`
 
 ---
@@ -106,7 +107,7 @@ A professional PDF report is automatically generated using Python.
 - Sales breakdown by store and product  
 
 📍 Output file:
-Output/retail_fraud_report.pdf
+`Output/retail_fraud_report.pdf`
 
 
 ---
@@ -116,6 +117,7 @@ Output/retail_fraud_report.pdf
 ### 1️⃣ Generate data
 
 python Script/generate_data.py
+
 ### 2️⃣ Run analysis and generate report
 python Script/retail_fraud_report.py
 
